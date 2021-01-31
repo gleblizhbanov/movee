@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     background-color: #fed100;
     padding: 40px 0; 
+    position: relative;
+    z-index: 1;
 }
 
 .header__menu {
@@ -103,11 +105,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 16px 95px 15px 96px;
     background-color: #ff352b;
     position: relative;
-    z-index: 1000;
 }
 
 .header__button::before {
-    z-index: 1;
     content: "";
     position: absolute;
     left: 10px;
@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 304px;
     height: 60px;
     border: 2px solid #f2f2f2;
+    z-index: -1;
 }
 
 .header__advantages {
