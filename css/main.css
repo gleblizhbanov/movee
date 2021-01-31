@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -26,7 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     background-color: #fed100;
-    padding: 40px 0; 
+    background-image: url(../images/header/bg-truck.png);
+    background-position: 1218px 180px;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 91px; 
     position: relative;
     z-index: 1;
 }
@@ -35,6 +39,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    position: relative;
 }
 
 .header__logo {
@@ -72,12 +78,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__main {
-
+    display: flex;
 }
 
 .header__content {
     margin-top: 60px;
-    max-width: 550px;
+    max-width: 500px;
+    margin-right: 80px;
 }
 
 .header__text {
@@ -105,6 +112,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 16px 95px 15px 96px;
     background-color: #ff352b;
     position: relative;
+    transition: all .1s linear;    
+}
+
+.header__button:hover {
+    background-color: #ec3329;
 }
 
 .header__button::before {
@@ -119,11 +131,63 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__advantages {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.advantages__item:first-child {
+    margin-right: 20px;
 }
 
 .advantages__item {
+    max-width: 135px;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+}
 
+.advantages__image {
+    margin-right: 10px;
+}
+
+.advantages__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.advantages__truck {
+    height: 40px;
+}
+
+.advantages__package {
+    height: 38px;
+}
+
+.advantages__money {
+    height: 41px;
+}
+
+.header__photo {
+    position: absolute;
+    margin-left: 625px;
+    margin-top: -35px;
+}
+
+.header__call {
+    margin-left: 1200px;
+    margin-top: 415px;
+    position: absolute;
+    background-color: rgba(61, 155, 233, 0.8);
+    padding: 24px 23px 23px 24px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 18px rgba(61, 155, 233, 0.3);
+    transition: all .2s linear;
+}
+
+.header__call:hover {
+    box-shadow: none;
 }
 
 /* /Header */
