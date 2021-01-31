@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+
+}
+
+/* /Header */
+
+/* How */
+
+.how {
+
+}
+
+/* /How */
+
+/* Prices */
+
+.prices {
+
+}
+
+/* /Prices */
+
+/* Park */
+
+.park {
+
+}
+
+/* /Park */
+
+/* Testimonails */
+
+.testimonials {
+
+}
+
+/* /Testimonials */
+
+/* Order */
+
+.order {
+
+}
+
+/* /Order */
+
+/* Map */
+
+.map {
+
+}
+
+/* /Map */
+
+/* Footer */
+
+.footer {
+
+}
+
+/* /Footer */
+
