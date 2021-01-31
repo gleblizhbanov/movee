@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: #333;
 }
 
 *, *::after, *::before {
@@ -12,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -20,6 +25,103 @@ a {
 /* Header */
 
 .header {
+    background-color: #fed100;
+    padding: 40px 0; 
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav__link {
+    color: #333;
+    transition: all .1s linear;
+}
+
+.nav__link:hover {
+    border-bottom: 1px solid #333;
+}
+
+.nav__link + .nav__link {
+    margin-left: 45px;
+}
+
+.header__phone {
+    color: #333;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.header__main {
+
+}
+
+.header__content {
+    margin-top: 60px;
+    max-width: 550px;
+}
+
+.header__text {
+    margin-bottom: 50px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 126.9%;
+    margin-bottom: 23px;
+}
+
+.header__subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.header__button {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f2f2f2;
+    padding: 16px 95px 15px 96px;
+    background-color: #ff352b;
+    position: relative;
+    z-index: 1000;
+}
+
+.header__button::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 304px;
+    height: 60px;
+    border: 2px solid #f2f2f2;
+}
+
+.header__advantages {
+
+}
+
+.advantages__item {
 
 }
 
