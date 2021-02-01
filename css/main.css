@@ -5,9 +5,7 @@ body {
     color: #333;
 }
 
-*,
-*::after,
-*::before {
+*,*::after,*::before {
     box-sizing: border-box;
 }
 
@@ -15,13 +13,7 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 
@@ -31,7 +23,6 @@ p {
 }
 
 /* Header */
-
 .header {
     background-color: #fed100;
     padding-top: 40px;
@@ -201,14 +192,11 @@ p {
 .header__call:hover {
     box-shadow: 0 0 0 8px rgba(61, 155, 233, 0.3);
 }
-
 /* /Header */
-
 
 /* How */
 .how {
     padding: 95px 0 45px 0;
-    /* margin-left: 300px; */
 }
 
 .how__title {
@@ -221,6 +209,7 @@ p {
 .how__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
 }
 
 .how__content-item {
@@ -243,6 +232,7 @@ p {
     font-size: 50px;
     line-height: 61px;
     margin-right: 40px;
+    text-shadow: 2px 0 0 #FED100;
 }
 
 .how__content-item-title {
@@ -255,7 +245,6 @@ p {
 .how__content-item-text {
     line-height: 21px;
 }
-
 /* /How */
 
 /* Prices */
