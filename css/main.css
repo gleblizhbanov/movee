@@ -5,7 +5,7 @@ body {
     color: #333;
 }
 
-*, *::after, *::before {
+*,*::after,*::before {
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 
@@ -23,11 +23,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Header */
-
 .header {
     background-color: #fed100;
     padding-top: 40px;
-    padding-bottom: 91px; 
+    padding-bottom: 91px;
     position: relative;
     z-index: 1;
 }
@@ -64,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 1px solid #333;
 }
 
-.nav__link + .nav__link {
+.nav__link+.nav__link {
     margin-left: 45px;
 }
 
@@ -110,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 16px 95px 15px 96px;
     background-color: #ff352b;
     position: relative;
-    transition: all .2s linear;    
+    transition: all .2s linear;
 }
 
 .header__button:hover {
@@ -193,62 +192,93 @@ h1, h2, h3, h4, h5, h6, p {
 .header__call:hover {
     box-shadow: 0 0 0 8px rgba(61, 155, 233, 0.3);
 }
-
 /* /Header */
 
 /* How */
-
 .how {
-
+    padding: 95px 0 45px 0;
 }
 
+.how__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 66px;
+}
+
+.how__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.how__content-item {
+    width: 490px;
+    display: flex;
+}
+
+.how__content-item:nth-child(1),
+.how__content-item:nth-child(3) {
+    margin-right: 130px;
+}
+
+.how__content-item:nth-child(1),
+.how__content-item:nth-child(2) {
+    margin-bottom: 77px;
+}
+
+.number {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 61px;
+    margin-right: 40px;
+    text-shadow: 2px 0 0 #FED100;
+}
+
+.how__content-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.how__content-item-text {
+    line-height: 21px;
+}
 /* /How */
 
 /* Prices */
 
-.prices {
-
-}
+.prices {}
 
 /* /Prices */
 
 /* Park */
 
-.park {
-
-}
+.park {}
 
 /* /Park */
 
 /* Testimonails */
 
-.testimonials {
-
-}
+.testimonials {}
 
 /* /Testimonials */
 
 /* Order */
 
-.order {
-
-}
+.order {}
 
 /* /Order */
 
 /* Map */
 
-.map {
-
-}
+.map {}
 
 /* /Map */
 
 /* Footer */
 
-.footer {
-
-}
+.footer {}
 
 /* /Footer */
-
