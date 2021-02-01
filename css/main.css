@@ -249,7 +249,71 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Prices */
 
-.prices {}
+.prices {
+
+}
+
+.prices__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.prices__card {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.prices__card-item {
+    width: 420px;
+    height: 579px;
+    border: 1px solid #EBEBEB;
+    padding: 84px 0 79px 0;
+    transition: all .3s linear;
+}
+
+.prices__card-item:hover {
+    border: 1px solid #FED100;
+}
+
+.prices__card-item-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.prices__card-item-information {
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 21px;
+}
+
+.prices__card-item-price {
+    margin-top: 63px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 66px;
+}
+
+.prices__card-item > a {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.prices__card-item-button {
+    padding: 13px 79px;
+    background-color: #FED100;
+    margin-left: 83px;
+    margin-right: 83px;
+}
+
+
 
 /* /Prices */
 
