@@ -26,9 +26,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header {
     background-color: #fed100;
-    background-image: url(../images/header/bg-truck.png);
-    background-position: 1218px 180px;
-    background-repeat: no-repeat;
     padding-top: 40px;
     padding-bottom: 91px; 
     position: relative;
@@ -39,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 10;
     position: relative;
 }
 
@@ -59,7 +56,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .nav__link {
     color: #333;
-    transition: all .1s linear;
+    transition: all .3s linear;
+    border-bottom: 1px solid transparent;
 }
 
 .nav__link:hover {
@@ -112,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 16px 95px 15px 96px;
     background-color: #ff352b;
     position: relative;
-    transition: all .1s linear;    
+    transition: all .2s linear;    
 }
 
 .header__button:hover {
@@ -167,6 +165,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .advantages__money {
     height: 41px;
+}
+
+.header__truck {
+    height: 100%;
+    margin-top: 97px;
+    margin-left: 360px;
 }
 
 .header__photo {
