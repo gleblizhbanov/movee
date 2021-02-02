@@ -187,7 +187,7 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 50%;
     box-shadow: 0 0 0 18px rgba(61, 155, 233, 0.3);
     transition: all .3s linear;
-    height: 100%;
+    height: 100px;
 }
 
 .header__call:hover {
@@ -279,6 +279,7 @@ h1,h2,h3,h4,h5,h6,p {
     border: 1px solid #EBEBEB;
     padding: 84px 0 79px 0;
     transition: all .3s linear;
+    text-align: center;
 }
 
 .prices__card-item:hover {
@@ -286,7 +287,6 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .prices__card-item-title {
-    text-align: center;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 60px;
@@ -294,41 +294,135 @@ h1,h2,h3,h4,h5,h6,p {
 
 .prices__card-item-information {
     margin-bottom: 25px;
-    text-align: center;
     line-height: 21px;
 }
 
 .prices__card-item-price {
     margin-top: 63px;
-    text-align: center;
     font-size: 30px;
     font-weight: 600;
     line-height: 36px;
     margin-bottom: 66px;
 }
 
-.prices__card-item > a {
+.order-button {
     color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
-}
-
-.prices__card-item-button {
     padding: 13px 79px;
-    background-color: #FED100;
-    margin-left: 83px;
-    margin-right: 83px;
+    background-color: #fed100;
+    transition: all .1s linear;
 }
 
-
+.order-button:hover {
+    background-color: #eec200;
+}
 
 /* /Prices */
 
 /* Park */
 
 .park {
-    
+    text-align: center;
+    padding: 45px 0;
+}
+
+.park__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 15px;
+}
+
+.park__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 60px;
+}   
+
+.park__select {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 47px;
+    display: flex;
+    list-style-type: none;
+    width: 55%;
+}
+
+.park__select__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+
+.park__select__item:hover {
+    background-color: #f7f7f7;
+}
+
+.park__select__item label {
+    padding: 13px 0;
+    cursor: pointer;
+    border: 1px solid #EBEBEB;
+}
+
+.park__select__item input, label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.select-radio {
+    display: none;
+}
+
+.select-radio:checked + label {
+    border: 1px solid #FED100;
+}
+
+.park__select__item + .park__select__item {
+    margin-left: 20px;
+}
+
+.park__content {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+}
+
+.park__content__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 37px;
+}
+
+.park__features {
+    margin-bottom: 47px;
+}
+
+.park__feature {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 28px;
+}
+
+.park__feature:last-child {
+    margin-bottom: 0;
+}
+
+.park__feature::before {
+    content: url(../images/park/check.png);
+    margin-right: 15px;
 }
 
 /* /Park */
