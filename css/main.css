@@ -429,7 +429,86 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Testimonails */
 
-.testimonials {}
+.testimonials {
+    text-align: center;
+    padding: 100px 0 95px 0;
+    background-color: #fed100;
+}
+
+.testimonials__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 60px;
+}
+
+.testimonials__content {
+    text-align: left;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.testimonials__item {
+    width: 33%;
+    position: relative;
+}
+
+.testimonials__item + .testimonials__item {
+    margin-left: 20px;
+}
+
+.testimonials__item__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.testimonials__item__rating {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 19px;
+}
+
+.testimonials__item__rating::after {
+    margin-left: 10px;
+    content: url(../images/testimonials/star.svg) url(../images/testimonials/star.svg) url(../images/testimonials/star.svg) url(../images/testimonials/star.svg) url(../images/testimonials/star.svg);
+}
+
+.testimonials__item__review {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 18px;
+}
+
+.testimonials__item__full {
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: underline;
+    transition: all .25s linear;
+    position: absolute;
+    top: 100%;
+}
+
+.testimonials__item__full:hover {
+}
+
+.testimonials__button {
+    padding: 13px 64px;
+    border: 1px solid #333333;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    transition: all .1s linear;
+}
+
+.testimonials__button:hover {
+    background-color: #eec200;
+}
 
 /* /Testimonials */
 
