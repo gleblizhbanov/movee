@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+img {
+    user-select: none;
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -40,12 +44,13 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
 }
 
-.header__logo {
+.logo {
     color: #333;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
+    user-select: none;
 }
 
 .nav {
@@ -111,6 +116,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #ff352b;
     position: relative;
     transition: all .2s linear;
+    user-select: none;
 }
 
 .header__button:hover {
@@ -189,6 +195,7 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0 0 0 18px rgba(61, 155, 233, 0.3);
     transition: all .3s linear;
     height: 100px;
+    user-select: none;
 }
 
 .header__call:hover {
@@ -314,7 +321,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500;
     padding: 13px 79px;
     background-color: #fed100;
-    transition: all .1s linear;
+    transition: all .2s linear;
+    user-select: none;
 }
 
 .order-button:hover {
@@ -360,6 +368,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 200px;
     height: 50px;
     position: relative;
+    user-select: none;
 }
 
 .park__select__item:hover {
@@ -503,6 +512,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 24px;
     color: #333;
     transition: all .1s linear;
+    user-select: none;
 }
 
 .testimonials__button:hover {
@@ -645,6 +655,85 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Footer */
 
-.footer {}
+.footer {
+    padding: 100px 0;
+    background-color: #fed100;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__block {
+    max-width: 21%;
+}
+
+.footer__agreements {
+    margin-top: 44px;
+}
+
+.footer__agreement {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130.4%;
+    color: #0E0F12;
+    display: block;
+    margin-bottom: 36px;
+}
+
+.footer__agreement:last-child {
+    margin-bottom: 0;
+}
+
+.footer__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer__links .footer__link:hover, .footer__agreement:hover {
+    text-decoration: underline;
+}
+
+.footer__link:last-child {
+    margin-bottom: 0;
+}
+
+.footer__social {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__link + .social__link {
+    margin-left: 30px;
+}
+
+.footer__email, .footer__phone {
+    border-bottom: 1px solid #333;
+}
+
+.footer__button {
+    padding: 10px 30px 10px 31px;
+    border: 1px solid #333;
+    transition: all .2s linear;
+    user-select: none;
+}
+
+.footer__button:hover {
+    background-color: #eec200;
+}
+
+.footer__phone {
+    display: inline-block;
+}
+
+.footer__contacts {
+    text-align: center;
+}
 
 /* /Footer */
