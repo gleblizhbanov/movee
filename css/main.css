@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .order__input {
     font-family: Montserrat;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
     width: 300px;
     margin-right: 70px;
     border: none;
@@ -550,7 +550,9 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 24px;
 }
 
-.order__submit {}
+.order__submit {
+    margin-top: -15px;
+}
 
 .order__button {
     display: block;
@@ -586,7 +588,51 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .order__checkbox-std {
-    margin: 0 10px 0 0;
+    position: absolute;
+    opacity: 0;  
+    width: 15px;
+    height: 15px;
+    margin: 3px 0 0;
+}
+
+.order__checkbox-std + .order__checkbox {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.015em;
+}
+
+.order__checkbox-std + .order__checkbox::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+    border-radius: 1.5px;
+}
+
+.order__checkbox-std + .order__checkbox::after {
+    content: url(../images/order/check.svg);
+    position: absolute;
+    transition: all .3s;
+    top: -1px;
+    left: 0;
+}
+
+.order__checkbox-std:not(:checked) + .order__checkbox::after {
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.order__checkbox-std:checked + .order__checkbox::after {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
 }
 
 /* /Order */
