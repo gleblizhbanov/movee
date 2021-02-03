@@ -320,11 +320,9 @@ h1, h2, h3, h4, h5, h6, p {
 .order-button:hover {
     background-color: #eec200;
 }
-
 /* /Prices */
 
 /* Park */
-
 .park {
     text-align: center;
     padding: 45px 0;
@@ -634,17 +632,39 @@ h1, h2, h3, h4, h5, h6, p {
     width: 15px;
     height: 15px;
 }
-
 /* /Order */
 
 /* Map */
+.map__wrapper {
+    position:relative;
+    overflow:hidden;
+}
 
-.map {}
+.map__BSU {
+    color:#eee;
+    font-size:12px;
+    position:absolute;
+    top:0px;
+}
 
+.map__HIE {
+    top:14px;
+}
+
+.map__NII {
+    top:28px;
+}
+
+.map__iframe {
+    width: 100%;
+    height: 666px;
+    position:relative;
+}
 /* /Map */
 
 /* Footer */
+.footer {
 
-.footer {}
+}
 
 /* /Footer */
