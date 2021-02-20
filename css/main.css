@@ -1005,6 +1005,9 @@ label {
         margin: 0 auto;
         margin-top: 30px;
     }
+    .map__card{
+        display: none;
+    }
     .footer .container{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -1041,6 +1044,51 @@ label {
     }
     .footer__button{
         padding: 10px 30px 10px 40px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .header__call{
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 0 12px rgb(61 155 233 / 30%);
+        top: 90%;
+    }
+    .call-img{
+        width: 100%;
+    }
+    .header__menu{
+        flex-direction: column;
+    }
+    .header .logo {
+        margin-bottom: 30px;
+    }
+    .header__title{
+        font-size: 60px;
+    }
+    .nav {
+        justify-content: space-evenly;
+    }
+    .how__content-item{
+        width: 360px;
+    }
+    .prices {
+        padding: 55px 0 45px 0;
+    }
+    .prices__card-item{
+        width: 360px;
+    }
+    .park__select{
+        width: 90%;
+    }
+    .park__select__item+.park__select__item{
+        margin-left: 10px;
+    }
+    .footer__email {
+        width: 165px;
+    }
+    .footer__block:last-child{
+        width: 270px;
     }
 }
 
