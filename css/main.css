@@ -5,7 +5,9 @@ body {
     color: #333;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -13,7 +15,13 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
@@ -25,6 +33,7 @@ img {
     max-width: 1320px;
     margin: 0 auto;
 }
+
 
 /* Header */
 
@@ -186,9 +195,11 @@ img {
 }
 
 .header__call {
-    margin-left: 1200px;
-    margin-top: 415px;
-    position: absolute;
+    /* margin-left: 1400px;
+    margin-top: 415px; */
+    left: 90%;
+    top: 80%;
+    position: fixed;
     background-color: rgba(61, 155, 233, 0.8);
     padding: 24px 23px 23px 24px;
     border-radius: 50%;
@@ -202,7 +213,9 @@ img {
     box-shadow: 0 0 0 8px rgba(61, 155, 233, 0.3);
 }
 
+
 /* /Header */
+
 
 /* How */
 
@@ -228,11 +241,13 @@ img {
     display: flex;
 }
 
-.how__content-item:nth-child(1), .how__content-item:nth-child(3) {
+.how__content-item:nth-child(1),
+.how__content-item:nth-child(3) {
     margin-right: 130px;
 }
 
-.how__content-item:nth-child(1), .how__content-item:nth-child(2) {
+.how__content-item:nth-child(1),
+.how__content-item:nth-child(2) {
     margin-bottom: 77px;
 }
 
@@ -255,7 +270,9 @@ img {
     line-height: 21px;
 }
 
+
 /* /How */
+
 
 /* Prices */
 
@@ -329,7 +346,9 @@ img {
     background-color: #eec200;
 }
 
+
 /* /Prices */
+
 
 /* Park */
 
@@ -381,7 +400,8 @@ img {
     border: 1px solid #EBEBEB;
 }
 
-.park__select__item input, label {
+.park__select__item input,
+label {
     position: absolute;
     top: 0;
     left: 0;
@@ -436,7 +456,9 @@ img {
     margin-right: 15px;
 }
 
+
 /* /Park */
+
 
 /* Testimonails */
 
@@ -519,7 +541,9 @@ img {
     background-color: #eec200;
 }
 
+
 /* /Testimonials */
+
 
 /* Order */
 
@@ -599,13 +623,13 @@ img {
 
 .order__checkbox-std {
     position: absolute;
-    opacity: 0;  
+    opacity: 0;
     width: 15px;
     height: 15px;
     margin: 3px 0 0;
 }
 
-.order__checkbox-std + .order__checkbox {
+.order__checkbox-std+.order__checkbox {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
@@ -615,7 +639,7 @@ img {
     letter-spacing: 0.015em;
 }
 
-.order__checkbox-std + .order__checkbox::before {
+.order__checkbox-std+.order__checkbox::before {
     content: '';
     position: absolute;
     left: 0;
@@ -626,7 +650,7 @@ img {
     border-radius: 1.5px;
 }
 
-.order__checkbox-std + .order__checkbox::after {
+.order__checkbox-std+.order__checkbox::after {
     content: url(../images/order/check.svg);
     position: absolute;
     transition: all .3s;
@@ -634,28 +658,30 @@ img {
     left: 0;
 }
 
-.order__checkbox-std:not(:checked) + .order__checkbox::after {
+.order__checkbox-std:not(:checked)+.order__checkbox::after {
     opacity: 0;
     transform: rotate(-45deg);
 }
 
-.order__checkbox-std:checked + .order__checkbox::after {
+.order__checkbox-std:checked+.order__checkbox::after {
     opacity: 1;
     width: 15px;
     height: 15px;
 }
 
+
 /* /Order */
+
 
 /* Map */
 
 .map {
-    position:relative;
+    position: relative;
 }
 
 .map__wrapper {
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     height: 70vh;
 }
 
@@ -694,7 +720,8 @@ img {
     transition: all .2s linear;
 }
 
-.card__item:hover, .card__email {
+.card__item:hover,
+.card__email {
     border-bottom: 1px solid #333;
 }
 
@@ -702,19 +729,20 @@ img {
     margin-bottom: 0;
 }
 
-.card__contacts__item::before{
+.card__contacts__item::before {
     content: url(../images/map/check-mark.svg);
     margin-right: 15px;
 }
 
-.map__social .social__link + .social__link {
+.map__social .social__link+.social__link {
     margin-left: 25px;
 }
 
 .map__social {
     width: 172px;
-    margin-left: auto;   
+    margin-left: auto;
 }
+
 
 /* 
 .map__NII {
@@ -725,7 +753,9 @@ img {
     top: 14px;
 } */
 
+
 /* /Map */
+
 
 /* Footer */
 
@@ -769,7 +799,8 @@ img {
     margin-bottom: 15px;
 }
 
-.footer__links .footer__link:hover, .footer__agreement:hover {
+.footer__links .footer__link:hover,
+.footer__agreement:hover {
     text-decoration: underline;
 }
 
@@ -783,7 +814,8 @@ img {
     justify-content: space-between;
 }
 
-.footer__email, .footer__phone {
+.footer__email,
+.footer__phone {
     border-bottom: 1px solid #333;
 }
 
@@ -805,5 +837,6 @@ img {
 .footer__contacts {
     text-align: center;
 }
+
 
 /* /Footer */
