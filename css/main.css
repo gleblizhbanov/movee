@@ -903,11 +903,140 @@ label {
     .container {
         max-width: 720px;
     }
+    .header__phone, .header__photo{
+        display: none;
+    }
+    .header__content{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header__main{
+        margin-top: 50px;
+    }
+    .header__call{
+        left: 82%;
+    }
+    .prices__card{
+        flex-wrap: wrap;
+    }
+    .prices__card-item{
+        width: 420px;
+        margin-bottom: 50px;
+    }
+    .prices__card-item:last-child{
+        margin-bottom: 0;
+    }
+    .testimonials__content{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .testimonials__item{
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .testimonials__ite:last-child{
+        margin-bottom: 0;
+    }
+    .testimonials__item+.testimonials__item{
+        margin-left: 0;
+    }
+    .order{
+        text-align: center;
+    }
+    .order__input{
+        margin-right: 0;
+    }
+    .order__input+.order__input{
+        margin-top: 20px;
+    }
+    .order__submit{
+        margin-right: 50px;
+    }
+    .map__card{
+        top: 50%;
+        left: 5%;
+    }
+    .footer__block{
+        max-width: 25%;
+    }
 }
 
 @media screen and (max-width:767px) {
     .container {
         max-width: 540px;
+    }
+    .nav__link+.nav__link{
+        margin-left: 10px;
+    }
+    .header {
+        padding-bottom: 60px;
+    }
+    .header__call {
+        left: 77%;
+    }
+    .header__advantages{
+        flex-direction: column;
+    }
+    .advantages__item:first-child{
+        margin: 0 auto;
+    }
+    .advantages__item{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .advantages__item+.advantages__item{
+        margin-top: 20px;
+    }
+    .park__select {
+        padding-left: 0;
+        width: 100%;
+    }
+    .park__truck{
+        width: 100%;
+    }
+    .order{
+        padding: 90px 0;
+    }
+    .order__form{
+        flex-direction: column;
+    }
+    .order__submit{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .footer .container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .footer__block{
+        max-width: 100%;
+        width: 40%;
+    }
+    .footer__agreements{
+        margin-bottom: auto;
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    .footer__link{
+       margin-left: auto;
+    }
+    .footer__block:nth-child(3){
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 51%;
+    }
+    .footer__block:last-child{
+        width: 50%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .footer__button{
+        padding: 10px 30px 10px 40px;
     }
 }
 
