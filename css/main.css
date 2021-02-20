@@ -196,7 +196,7 @@ img {
 
 .header__call {
     left: 90%;
-    top: 80%;
+    top: 85vh;
     position: fixed;
     background-color: rgba(61, 155, 233, 0.8);
     padding: 24px 23px 23px 24px;
@@ -838,3 +838,78 @@ label {
 
 
 /* /Footer */
+
+
+/* Responsive */
+
+@media screen and (max-width:1550px) {
+    .header__truck {
+        margin-left: 290px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    .header__truck {
+        display: none;
+    }
+    .header__call {
+        left: 88%;
+        top: 88vh;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .header__photo {
+        margin-left: 570px;
+    }
+    .how__content-item:nth-child(1), .how__content-item:nth-child(2), .how__content-item:nth-child(3){
+        margin: 0 0 80px 0;
+    }
+    .how__content-item:nth-child(4){
+        margin:0;
+    }
+    .header__call {
+        left: 85%;
+    }
+    .park__content{
+       flex-direction: column-reverse;
+       position: relative;
+    }
+    .park .arrow{
+        position: absolute;
+        top: 50%;
+    }
+    .park .left-arrow{
+        margin-right: auto;
+    }
+    .park .right-arrow{
+        margin-left: auto;
+    }
+    .order__input{
+        margin-right: 50px;
+    }
+    .prices__card-item{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+/* /Responsive */
