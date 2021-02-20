@@ -1053,6 +1053,7 @@ label {
         height: 80px;
         box-shadow: 0 0 0 12px rgb(61 155 233 / 30%);
         top: 90%;
+        left: 75%;
     }
     .call-img{
         width: 100%;
@@ -1075,14 +1076,27 @@ label {
     .prices {
         padding: 55px 0 45px 0;
     }
+    .prices__subtitle{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
     .prices__card-item{
         width: 360px;
+    }
+    .park__subtitle{
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
     .park__select{
         width: 90%;
     }
     .park__select__item+.park__select__item{
         margin-left: 10px;
+    }
+    .footer{
+        padding: 80px 0;
     }
     .footer__email {
         width: 165px;
@@ -1092,5 +1106,83 @@ label {
     }
 }
 
+@media screen and (max-width:424px){
+    .header__call {
+        left: 74%;
+        padding: 18px 17px 17px 18px;
+    }
+    .header__title{
+        font-size: 50px;
+    }
+    .header__subtitle{
+        font-size: 25px;
+    }
+    .how__content-item{
+        width: 300px;
+    }
+    .how__content-item:nth-child(1), .how__content-item:nth-child(2), .how__content-item:nth-child(3){
+        margin: 0 0 40px 0;
+    }
+    .prices__card-item{
+        width: 300px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .park__select{
+        flex-direction: column;
+        align-items: center;
+    }
+    .park__select__item+.park__select__item{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .park__content{
+        padding: 0 30px;
+    }
+    .footer{
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width:374px){
+    .header__call {
+        left: 68%;
+    }
+    .nav{
+        display: none;
+    }
+    .header__title{
+        font-size: 40px;
+    }
+    .header__subtitle{
+        font-size: 22px;
+    }
+    .header__button{
+        padding: 16px 68px 15px 69px;
+    }
+    .header__button::before{
+        width: 250px;
+    }
+    .how__content-item {
+        width: 265px;
+    }
+    .prices__card-item{
+        width: 280px;
+    }
+    .order__input{
+        width: 250px;
+    }
+    .footer__block{
+        width: 100%;
+        text-align: center;
+    }
+    .footer__agreement{
+        margin-bottom: 20px;
+    }
+    .footer__links{
+        display: none;
+    }
+
+}
 
 /* /Responsive */
